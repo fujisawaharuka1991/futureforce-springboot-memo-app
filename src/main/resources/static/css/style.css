@@ -473,7 +473,7 @@ textarea {
 }
 
 .note-badge.high   { background:#dc3545; color:#fff; }
-.note-badge.medium { background:#ffc107; color:#212529; }
+.note-badge.middle { background:#ffc107; color:#212529; }
 .note-badge.low    { background:#198754; color:#fff; }
 
 /* ラジオグループ全体 */
@@ -514,7 +514,7 @@ textarea {
 
 /* デフォは薄めの色 */
 .priority-pill.high   { background:#f8d7da; color:#721c24; }
-.priority-pill.medium { background:#fff3cd; color:#856404; }
+.priority-pill.middle { background:#fff3cd; color:#856404; }
 .priority-pill.low    { background:#d4edda; color:#155724; }
 
 /* 選択中 */
@@ -525,7 +525,7 @@ textarea {
 .priority-pill.high:has(.priority-radio:checked) {
   background:#dc3545; color:#fff;
 }
-.priority-pill.medium:has(.priority-radio:checked) {
+.priority-pill.middle:has(.priority-radio:checked) {
   background:#ffc107; color:#212529;
 }
 .priority-pill.low:has(.priority-radio:checked) {
