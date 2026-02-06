@@ -39,6 +39,7 @@
 					        
 					        <span th:text="${p.label}">高</span>
 					    </label>
+						<div th:if="${#fields.hasErrors('priority')}" th:errors="*{priority}" class="error-message"></div>
 					</div>
 				</div>
 
