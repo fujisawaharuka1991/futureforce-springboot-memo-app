@@ -7,5 +7,6 @@ import com.lesson.memo.model.Memo;
 
 public interface MemoRepository extends JpaRepository<Memo, Long> {
 	List<Memo> findAllByOrderByPriorityAsc();
+	List<Memo> findByTitleContainingOrContentContainingOrderByPriorityAsc(String title, String content);
     
 }
