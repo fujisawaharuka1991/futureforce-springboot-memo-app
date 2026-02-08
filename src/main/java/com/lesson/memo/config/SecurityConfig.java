@@ -24,8 +24,6 @@ public class SecurityConfig {
             .requestMatchers("/", "/admin/signup", "/admin/signin").permitAll()
             .anyRequest().authenticated()
         )
-        .headers(headers -> headers.frameOptions(frame -> frame.sameOrigin()))
-        .csrf(csrf -> csrf.ignoringRequestMatchers("/h2-console/**"))
         
         .formLogin(login -> login
             .loginPage("/admin/signin")
